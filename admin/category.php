@@ -179,7 +179,7 @@ $.ajax({
         alert("Duplicate name");
     }else if(data['edit']== true){
        tbl.find('tr:eq('+ind+') td:eq(1)').text(name.val());
-    //    tbl.find('tr:eq('+ind+') td:eq(2)').text(price.val());
+        tbl.find('tr:eq('+ind+') td:eq(2)').text(des.val());
        tbl.find('tr:eq('+ind+') td:eq(3) img').attr("src","img/"+imgName.val()+"");
        tbl.find('tr:eq('+ind+') td:eq(3) img').attr("alt",""+imgName.val()+"");
     }else{
@@ -188,7 +188,7 @@ $.ajax({
            <tr>
                 <td>${id.val()}</td>
                 <td>${name.val()}</td>
-                <td>${price.val()}</td>
+                <td>${des.val()}</td>
                 <td> <img src='img/${imgName.val()}'alt="${imgName.val()}"</td>
                 <td>${btnEdit}</td>
            </tr>
@@ -196,7 +196,7 @@ $.ajax({
                         tbl.find('tr:eq(0)').after(tr);
                         //    tbl.prepend(tr);
                         name.val("");
-                        price.val("");
+                        des.val("");
                         imgBox.css({
                             "background-image": "url(style/photo.png)"
                         });
