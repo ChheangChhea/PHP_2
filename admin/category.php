@@ -45,7 +45,7 @@ if ($rs->num_rows > 0) {
            </select>
             <label for="">Name</label>
             <input type="text" name="txt-name" id="txt-name" class="frm-control">
-           
+
            <label for="">Status</label>
            <select name="txt-status" id="txt-status" class="frm-control">
              <option value="1">1</option>
@@ -65,7 +65,7 @@ if ($rs->num_rows > 0) {
           <div class="box"  style="width:68%; margin-left:2%">
           <label for="">Description</label>
            <textarea  style="height:300px" name="txt-des" id="txt-des" class="frm-control"></textarea>
-           
+
           </div>
             <div class='btnSave'>
                 Save
@@ -150,7 +150,7 @@ if ($rs->num_rows > 0) {
         var des= $('#txt-des');
         var imgName= $('#txt-img');
         var imgBox = $('.img-box');
-        
+
         var status = $('#txt-status');
         if(name.val()==''){
             alert("please input name");
